@@ -1,0 +1,768 @@
+@import "adaptiv.css";
+/*------------------------------------Анимации------------------------------------------*/
+@keyframes Sun {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes AnimationContacts {
+    from { background-color: #2a3037;}
+    20% { background-color: indigo;}
+    40% { background-color: midnightblue;}
+    60% { background-color: dodgerblue;}
+    80% { background-color: midnightblue;}
+    to { background-color: indigo;}
+}
+@keyframes AnimationButton {
+    from { background-color: #5ecdd4;}
+    33% { background-color: #d9bb4b;}
+    66% { background-color: #5ed4b1;}
+    to { background-color: #cc668b;}
+}
+/*------------------------------------Параметры страниц-----------------------------------------*/
+body {
+    margin: 0;
+}
+.Basis {
+    border: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    background: url("images/Layer_2_copy.png") no-repeat 0 -27px,
+    url("images/Layer_2.png") no-repeat 0 1235px, url("images/fon2.jpg") no-repeat;
+}
+.BasisSize {
+    height: 2500px;
+    background: url("images/Rectangle_6_copy.png") no-repeat -58px 2040px, url("images/Rectangle_6.png")
+    no-repeat -48px 1234px, url("images/Layer_2_copy.png") no-repeat 0 -27px,
+    url("images/Layer_2.png") no-repeat 0 1235px, url("images/fon.jpg") no-repeat;
+}
+.BasisAbout {
+    height: 1500px;
+    background-size: cover;
+}
+.BasisTur {
+    height: 2150px;
+    background-size: cover;
+}
+.BasisBlog {
+    height: 100%;
+    background-size: cover;
+}
+.BasisGalery {
+    height: 1350px;
+}
+.BasisContact {
+    height: 1200px;
+}
+.Container {
+    margin: 0 auto;
+    background-color: transparent;
+    border: solid transparent 1px;
+    position: relative;
+    width: 1170px;
+}
+.ContainerSize {
+    height: 2500px;
+}
+.ContainerAbout {
+    height: 1500px;
+}
+.ContainerTur {
+    height: 2150px;
+}
+.ContainerBlog {
+    height: 100%;
+}
+.ContainerGalery {
+    height: 1350px;
+}
+.ContainerContact {
+    height: 1200px;
+}
+button:hover {
+    cursor: pointer;
+}
+/*------------------------------------Логотип и соц сети------------------------------------------*/
+header {
+    margin-top: 80px;
+    display: flex;
+    border: solid transparent 1px;
+}
+header p {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+header span {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+header + div {
+    flex-basis: 60px;
+    float: left;
+}
+header div:nth-child(2) {
+    flex-grow: 5;
+    margin-left: 15px;
+}
+header div:nth-child(3), header div:nth-child(4), header div:nth-child(5), header div:nth-child(6) {
+    flex-basis: 35px;
+    float: right;
+    margin-left: 7px;
+    margin-top: 20px;
+}
+header div a img:hover {
+    animation: Sun 1s 1;
+}
+/*---------------------------------------Меню-----------------------------------------------------*/
+nav.navbar {
+    margin-top: 64px;
+    background-image: url("images/Rectangle_1_copy_2.png");
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light  div.collapse.navbar-collapse
+ul.navbar-nav.mr-auto li.nav-item a.nav-link {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 31px;
+    text-transform: uppercase;
+    padding-left: 50px;
+    margin-right: 50px;
+    border-left: solid #5ecdd4 2px;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light  div.collapse.navbar-collapse
+ul.navbar-nav.mr-auto li.nav-item a.nav-link:hover, nav.navbar.navbar-expand-lg.navbar-light.bg-light a.navbar-brand:hover {
+    transform: scale(1.3);
+}
+/*------------------------------------Карусель 1 слайд----------------------------------------------*/
+div.carousel-caption.d-none.d-md-block h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+div.carousel-caption.d-none.d-md-block p {
+    color: #5ecdd4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+/*------------------------------------Блок галерея на главной стр------------------------------------------*/
+.Galery {
+    width: 1170px;
+    height: 70px;
+    margin-top: 8px;
+    box-shadow: 1px 2px 0 rgba(78, 78, 90, 0.48);
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+div.Galery a {
+    color: #181818;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 31px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 33px;
+}
+.Photos {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    width: 1170px;
+    height: 190px;
+    background-color: #2a3037;
+}
+#prev {
+    position: absolute;
+    left: -20px;
+}
+#next {
+    position: absolute;
+    right: -20px;
+}
+div.navigation {
+    width: 1210px;
+    position: absolute;
+    top: 850px;
+    left: -20px;
+    z-index: 1;
+}
+div.navigation button.owl-next {
+    width: 54px;
+    height: 54px;
+    float: right;
+    background-color: transparent;
+    border: none;
+}
+div.navigation button.owl-prev {
+    width: 54px;
+    height: 54px;
+    background-color: transparent;
+    border: none;
+}
+div.owl-carousel.owl-theme {
+    width: 1072px;
+    border: none;
+    z-index: 3;
+}
+div.owl-carousel.owl-theme img:hover {
+    transform: scale(0.9);
+}
+
+div.owl-carousel.owl-theme img {
+    height: 140px;
+    box-shadow: 1px 2px 0 rgba(78, 78, 90, 0.48);
+    border: 5px solid #ffffff;
+    background-color: #585858;
+    vertical-align: center;
+    margin-top: 25px;
+}
+/*------------------------------------4 разноцв блока------------------------------------------*/
+.Nav {
+    width: 1170px;
+    height: 432px;
+    margin-top: 26px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+div.Nav div {
+    flex-basis: 270px;
+    height: 432px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+div.Nav p {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+div.Nav p span {
+    font-weight: 600;
+}
+div.Nav p:last-of-type {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 1px;
+}
+div.Nav a {
+    display: block;
+    width: 110px;
+    height: 25px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 1px 2px 0 rgba(78, 78, 90, 0.48);
+    text-transform: uppercase;
+    color: transparent;
+    margin-top: 1px;
+    margin-left: 25px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+div.Nav div:nth-child(1) {
+    background-color: #5ecdd4;
+}
+div.Nav div:nth-child(2) {
+    background-color: #5ed4b1;
+}
+div.Nav div:nth-child(3) {
+    background-color: #d9bb4b;
+}
+div.Nav div:nth-child(4) {
+    background-color: #cc668b;
+}
+/*----------------------------Инфо о фирме-------------------------------------------------*/
+.Info {
+    width: 1170px;
+    height: 530px;
+    margin-top: 68px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+div.Info div:first-child {
+    flex-basis: 540px;
+    margin-right: 1px;
+    border: none;
+}
+div.Info div h3 {
+    color: #5ecdd4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+div.Info h4 {
+    color: #181818;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+div.Info div img {
+    float: left;
+    margin-right: 5px;
+}
+div.Info p {
+    color: #787878;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+}
+div.Info a {
+    display: block;
+    width: 110px;
+    height: 37px;
+    background-color: #292f36;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 3px;
+}
+div.Info div:last-child {
+    flex-basis: 580px;
+    margin-left: 1px;
+    border: none;
+}
+div.InfoOne {
+    border: none;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+div.InfoOne div:first-child {
+    margin-right: 38px;
+    flex-basis: 270px;
+    flex-grow: 1;
+}
+div.InfoOne div:last-child {
+    flex-basis: 270px;
+    flex-grow: 1;
+}
+div.InfoOne div:first-child h5 {
+    color: #5ecdd4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+div.InfoOne div:last-child h5 {
+    color: #5ed4b1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+div.InfoTwo {
+    border: none;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.InfoTwo div:first-child {
+    margin-right: 38px;
+    flex-basis: 270px;
+    flex-grow: 1;
+}
+div.InfoTwo div:last-child {
+    flex-basis: 270px;
+    flex-grow: 1;
+}
+div.InfoTwo div:first-child h5 {
+    color: #d9bb4b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+div.InfoTwo div:last-child h5 {
+    color: #ce6f91;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+/*--------------------------Контакты на главной-------------------------------------------*/
+footer {
+    width: 1170px;
+    margin-top: 104px;
+    display: flex;
+    position: relative;
+}
+footer div:first-child {
+    flex-basis: 37px;
+    float: left;
+}
+footer div:nth-child(2) {
+    flex-basis: 200px;
+    float: left;
+}
+footer div span:first-child {
+    margin-left: 5px;
+    margin-bottom: 1px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+footer div span:last-child {
+    margin-left: 10px;
+    color: #d3d3d3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+footer div:nth-child(3) {
+    flex-basis: 50px;
+    flex-grow: 1;
+    color: #d9bb4b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    float: left;
+    text-align: left;
+}
+footer div:nth-child(4), footer div:nth-child(5), footer div:nth-child(6) {
+    flex-basis: 160px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 15px;
+}
+footer ul {
+    list-style: square;
+    margin-top: 25px;
+    padding-left: 15px;
+}
+footer li {
+    color: #787878;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+}
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------страница О НАС-------------------------------------------*/
+.News {
+    width: 1170px;
+    height: 70px;
+    margin-top: 8px;
+}
+.News p {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+.Color1 {
+    background-color: #5ed4b1;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+div.News h4 {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+div.Company h5, h6 {
+    color: #787878;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+
+}
+.Company {
+    width: 1170px;
+    background-color: lightcyan;
+    color: #787878;
+    font-family: 'Open Sans', sans-serif;
+    border: solid transparent 1px;
+}
+.Text {
+    text-align: justify;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+div.Company.Text img {
+    float: left;
+    margin: 10px 5px;
+    animation: Sun 6s infinite;
+}
+div.Company h5 + img {
+    width: 200px;
+    height: 135px;
+    float: right;
+    margin: 0 5px;
+    animation: none;
+}
+li {
+    color: #787878;
+    font-family: 'Open Sans', sans-serif;
+}
+div.animated.zoomIn {
+    margin-top: 8px;
+    border: transparent;
+}
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------страница ТУРЫ--------------------------------------------*/
+.Bron {
+    width: 1170px;
+    height: 70px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    background-color: #d9bb4b;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+.Bron2 {
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+    margin-bottom: 8px;
+}
+.Bron p {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+.Bron2 p {
+    color: #181818;
+}
+/*---------------PODBOR TURA------------------------*/
+label.input-group-text {
+    width: 400px;
+    background-color: lemonchiffon;
+}
+select.custom-select {
+    background-color: lightyellow;
+}
+div.Calendar {
+    display: flex;
+}
+input.Select {
+    background-color: lightyellow;
+    flex-grow: 1;
+}
+button.tur {
+    width: 100%;
+    height: 37px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 1px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    padding: 1px;
+    animation: AnimationButton 4s infinite;
+    border: solid transparent 1px;
+}
+/*---------------POPULAR------------------------*/
+.Popular {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    border: solid transparent 1px;
+    background-color: transparent;
+    margin-bottom: 8px;
+}
+div.card-body button {
+    background-color: lightyellow;
+    font-family: 'Open Sans', sans-serif;
+    color: #181818;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    width: 100%;
+}
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------страница БЛОГ--------------------------------------------*/
+.Color {
+    background-color: #5ecdd4;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+.Color2 {
+    background-color: #cc668b;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+div.animated {
+    width: 1170px;
+    background-color: lemonchiffon;
+    color: #787878;
+    font-family: 'Open Sans', sans-serif;
+    border: solid #5ecdd4 1px;
+}
+article img {
+    margin: 10px 10px;
+}
+
+input.SReadMore     {
+    display: none;
+}
+input.SReadMore + label + div    {
+    display: none;
+}
+input.SReadMore:checked + label + div    {
+    display: block;
+}
+input.SReadMore + label    {
+    text-decoration: underline;
+    cursor: pointer;
+}
+input.SReadMore:checked + label    {
+    display: none;
+}
+input.SReadMore + label + div + input + label    {
+    display: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+input.SReadMore:checked + label + div + input + label    {
+    display: block;
+}
+article span, article label {
+    color: indigo
+}
+/*------------------------------------------------------------------------------*/
+/*------------------------страница ГАЛЕРЕЯ--------------------------------------*/
+div.gallery.row {
+    width: 1170px;
+    margin: 8px 0 0 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+}
+.thumb img {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.thumb img:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transform: scale(1.2);
+    border-radius: 70%;
+}
+div.col-lg-3.col-md-4.col-6.thumb {
+    margin: 8px 0;
+    padding: 0;
+    text-align: center;
+}
+/*------------------------------------------------------------------------------*/
+/*---------------------------страница КОНТАКТЫ-----------------------------------*/
+#fon {
+    animation: AnimationContacts 5s infinite;
+}
+.Address {
+    width: 1170px;
+    height: 500px;
+    margin-top: 8px;
+    background-color: #2a3037;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+div.Address {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: center;
+}
+div.Address h4 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 98px 10px 10px 50px;
+}
+div.Address p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+div.Address img {
+    float: right;
+    margin: 98px 50px 10px 10px;
+}
+/*------------------------------------------------------------------------------*/

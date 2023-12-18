@@ -1,0 +1,137 @@
+@media all and (max-width: 1220px) {
+    div.Basis {
+        background-size: cover;
+    }
+    div.Container, nav.navbar.navbar-expand-lg.navbar-light.bg-light, div.collapse.navbar-collapse,
+    div#carouselExampleControls.carousel.slide, div.Galery, div.Photos, div.owl-carousel.owl-theme,
+    div.Nav, div.Info, footer#main, div.News, div.Company, div.animated.zoomIn, div.Bron, div.Calendar div.input-group.mb-3,
+    button#btn.tur, div.Popular, div#article, div#pictures.gallery.row, div.Address{
+        width: 900px;
+    }
+    div.owl-carousel.owl-theme.owl-loaded.owl-drag {
+        width: 800px;
+    }
+    div.Nav img {
+        width: 200px;
+    }
+    form.form-inline.my-2.my-lg-0, div.owl-dots, #prev, #next, div.navigation {
+        display: none;
+    }
+    div.BasisAbout {
+        height: 1700px;
+    }
+    div.BasisTur, div.ContainerTur {
+        height: 2800px;
+    }
+    div.Nav {
+        height: 432px;
+    }
+    div.Info div{
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    div.Info div a {
+        float: right;
+    }
+    div.Info, div.Calendar {
+        flex-direction: column;
+    }
+    div.Nav div {
+        flex-basis: 200px;
+    }
+    div.Popular {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    footer div#year:nth-child(3) {
+        flex-basis: 50px;
+        flex-grow: 0;
+    }
+    footer#main {
+        margin-top: 150px;
+    }
+    div.thumb img:hover {
+        transform: scale(0.9);
+    }
+}
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+@media all and (max-width: 960px) {
+    div.Basis {
+        background-size: cover;
+    }
+    div.BasisSize {
+        background: url("images/Layer_2_copy.png") no-repeat 0 -27px,
+        url("images/Layer_2.png") no-repeat 0 1235px, url("images/fon2.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    header div:nth-child(3), header div:nth-child(4), header div:nth-child(5),
+    header div:nth-child(6){
+        display: none;
+    }
+    div.Container, nav.navbar.navbar-expand-lg.navbar-light.bg-light, div.collapse.navbar-collapse,
+    div#carouselExampleControls.carousel.slide, div.Galery, div.Photos, div.owl-carousel.owl-theme,
+    div.Nav, div.Info, footer#main, div.News, div.Company, div.animated.zoomIn, div.Bron, div.Calendar div.input-group.mb-3,
+    button#btn.tur, div.Popular, div#article, div#pictures.gallery.row, div.Address{
+        width: 480px;
+    }
+    div.owl-carousel.owl-theme.owl-loaded.owl-drag {
+        width: 450px;
+    }
+    div.Nav img {
+        display: none;
+    }
+    div.Nav {
+        flex-direction: column;
+        height: 800px;
+        margin-top: 8px;
+    }
+    div.Nav div {
+        width: 480px;
+        margin-top: 3px;
+    }
+    div.Info div{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    div.Info div a {
+        float: right;
+    }
+    div.Info div:nth-child(2){
+        display: none;
+    }
+    form.form-inline.my-2.my-lg-0, div.owl-dots, #prev, #next, div.navigation {
+        display: none;
+    }
+    div.Info, div.Calendar {
+        flex-direction: column;
+    }
+    div.BasisAbout {
+        height: 2500px;
+    }
+    div.BasisTur, div.ContainerTur {
+        height: 6300px;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    footer div:nth-child(4), footer div:nth-child(5), footer div:nth-child(6) {
+        display: none;
+    }
+    div.input-group-prepend label.input-group-text {
+        width: 480px;
+    }
+    div.Popular {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    div.thumb img:hover {
+        transform: scale(0.9);
+    }
+    div.Address img {
+        display: none;
+    }
+}
